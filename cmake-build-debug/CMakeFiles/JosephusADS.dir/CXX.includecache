@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.h
+node.h
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node.h
+
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/main.cpp
+iostream
+-
+linkedlist.h
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.h
+
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node.h
+
