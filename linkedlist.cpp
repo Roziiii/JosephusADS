@@ -57,3 +57,47 @@ void LinkedList::prepend(int val) {
 
     }
 }
+
+void LinkedList::remove(int val) {
+    Node* last = sentinel;
+    while(last->val != val){
+        last = last->next;
+    }
+    Node* toRemove = last;
+    last = last->prev;
+    last->next = last->next->next;
+    last->next->prev = last;
+    delete(toRemove);
+}
+
+void LinkedList::remove(Node * nodeToRemove) {
+    nodeToRemove->prev->next = nodeToRemove->next;
+    nodeToRemove->next->prev = nodeToRemove->prev;
+    delete(nodeToRemove);
+}
+
+Node * LinkedList::next_executioner(int val) {
+    Node* temp = sentinel;
+    while(temp->val != val){
+        temp = temp->next;
+    }
+    return temp->next->next;
+}
+
+Node* LinkedList::find_node(int val) {
+    Node* temp = sentinel;
+    while(temp->val != val){
+        temp = temp->next;
+    }
+    return temp;
+}
+
+int LinkedList::size() {
+    int size = 0;
+    Node* temp = sentinel->next;
+    while(temp != sentinel){
+        size++;
+        temp = temp->next;
+    }
+    return size;
+}

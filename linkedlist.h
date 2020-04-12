@@ -2,8 +2,8 @@
 // Created by Pop Rosian on 12/04/2020.
 //
 
-#ifndef JOSEPHUS_PROBLEM_HW1_LINKEDLIST_H
-#define JOSEPHUS_PROBLEM_HW1_LINKEDLIST_H
+#ifndef JOSEPHUSADS_LINKEDLIST_H
+#define JOSEPHUSADS_LINKEDLIST_H
 
 
 #include "node.h"
@@ -13,12 +13,16 @@ class LinkedList {
         Node* sentinel;
     public:
         LinkedList();
-        void append(int val);
-        void prepend(int val);
+        void append(int);
+        void prepend(int);
         void print_list();
-        void delete_element(int val);
+        void remove(int);
+        void remove(Node*);
+        int size();
+        Node* next_executioner(int);
+        Node* find_node(int);
 
 };
 
 
-#endif //JOSEPHUS_PROBLEM_HW1_LINKEDLIST_H
+#endif //JOSEPHUSADS_LINKEDLIST_H
