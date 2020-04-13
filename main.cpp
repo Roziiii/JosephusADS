@@ -1,5 +1,5 @@
 #include <iostream>
-#include "linkedlist.h"
+#include "include/linkedlist.h"
 
 using namespace std;
 
@@ -12,30 +12,11 @@ LinkedList generate_list(int size){
 }
 
 
-void begin_execution(LinkedList josephusCircle){
-    Node* currentExecutioner = josephusCircle.find_node(1);
-    while(josephusCircle.size() > 1){
-        if(currentExecutioner->next->val == 0){
-            josephusCircle.remove(currentExecutioner->next->next);
-            currentExecutioner=currentExecutioner->next->next;
-        } else {
-            josephusCircle.remove(currentExecutioner->next);
-            currentExecutioner = currentExecutioner->next;
-
-        }
-        if(currentExecutioner->val == 0){
-            currentExecutioner=currentExecutioner->next;
-        }
-
-    }
-    josephusCircle.print_list();
-
-
-}
-
 int main() {
-    LinkedList josephusCircle = generate_list(4);
-    josephusCircle.print_list();
-    begin_execution(josephusCircle);
+    int numberOfPeople;
+    cin>>numberOfPeople;
+    LinkedList josephusCircle = generate_list(numberOfPeople); //Just a simple function that appends as many nodes as numberOfPeople, giving them values from 1 to numberOfPeople
+    josephusCircle.beginExecution(); //Begins the execution simulation
+    josephusCircle.printList(); //Prints the list, which should now be only 1 element, the position of the survivor.
 
 }

@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.cpp" "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles/JosephusADS.dir/linkedlist.cpp.o"
+  "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.cpp" "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o"
+  "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.cpp" "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles/JosephusADS.dir/include/node.cpp.o"
   "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/main.cpp" "/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles/JosephusADS.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

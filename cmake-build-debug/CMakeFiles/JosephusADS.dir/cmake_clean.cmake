@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/JosephusADS.dir/linkedlist.cpp.o"
+  "CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o"
+  "CMakeFiles/JosephusADS.dir/include/node.cpp.o"
   "CMakeFiles/JosephusADS.dir/main.cpp.o"
   "JosephusADS"
   "JosephusADS.pdb"
