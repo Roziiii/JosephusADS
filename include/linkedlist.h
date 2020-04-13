@@ -15,12 +15,13 @@ class LinkedList {
         LinkedList();
         void append(int);
         void prepend(int);
-        void print_list();
+        void printList();
         void remove(int);
         void remove(Node*);
         int size();
-        Node* next_executioner(int);
-        Node* find_node(int);
+        Node* nextExecutioner(int);
+        Node* findNode(int);
+        int beginExecution();
 
 };
 

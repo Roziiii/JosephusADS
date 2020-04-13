@@ -78,16 +78,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.cpp">
+		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.cpp">
 			<Option target="JosephusADS"/>
 		</Unit>
-		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.h">
+		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.h">
+			<Option target="JosephusADS"/>
+		</Unit>
+		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.cpp">
+			<Option target="JosephusADS"/>
+		</Unit>
+		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.h">
 			<Option target="JosephusADS"/>
 		</Unit>
 		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/main.cpp">
 			<Option target="JosephusADS"/>
 		</Unit>
-		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node.h">
+		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node_old.h">
 			<Option target="JosephusADS"/>
 		</Unit>
 		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/CMakeLists.txt">

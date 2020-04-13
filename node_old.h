@@ -2,8 +2,8 @@
 // Created by Pop Rosian on 12/04/2020.
 //
 
-#ifndef JOSEPHUSADS_NODE_H
-#define JOSEPHUSADS_NODE_H
+#ifndef JOSEPHUSADS_NODE_OLD_H
+#define JOSEPHUSADS_NODE_OLD_H
 
 
 struct Node{
@@ -13,4 +13,4 @@ struct Node{
 };
 
 
-#endif //JOSEPHUSADS_NODE_H
+#endif //JOSEPHUSADS_NODE_OLD_H
