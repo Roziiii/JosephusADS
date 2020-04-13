@@ -41,16 +41,16 @@ void LinkedList::printList() {
     }
 }
 
-void LinkedList::prepend(int val) {
+void LinkedList::prepend(int val) { //Just like append but it adds a node behind the first node.
     Node* newNode = new Node();
     newNode->setVal(val);
-    if(sentinel->getNext() == nullptr){
+    if(sentinel->getNext() == nullptr){ //If there is no node, just create the first one.
         sentinel->setNext(newNode);
         sentinel->setPrev(newNode);
         newNode->setPrev(sentinel);
         newNode->setNext(sentinel);
     } else {
-        newNode->setNext(sentinel->getNext());
+        newNode->setNext(sentinel->getNext()); //If there is a node, add it before the first one.
         newNode->setPrev(sentinel);
         sentinel->getNext()->setPrev(newNode);
         sentinel->setNext(newNode);
@@ -58,7 +58,7 @@ void LinkedList::prepend(int val) {
     }
 }
 
-void LinkedList::remove(int val) {
+void LinkedList::remove(int val) { //Removes a node from the list using it's value
     Node* temp = sentinel;
     while(temp->getVal() != val){
         temp = temp->getNext();
@@ -70,13 +70,13 @@ void LinkedList::remove(int val) {
     delete(toRemove);
 }
 
-void LinkedList::remove(Node * nodeToRemove) {
+void LinkedList::remove(Node * nodeToRemove) { //Removes a node from the list.
     nodeToRemove->getPrev()->setNext(nodeToRemove->getNext());
     nodeToRemove->getNext()->setPrev(nodeToRemove->getPrev());
     delete(nodeToRemove);
 }
 
-Node * LinkedList::nextExecutioner(int val) {
+Node * LinkedList::nextExecutioner(int val) { //Lists the 3rd element from a given one.
     Node* temp = sentinel;
     while(temp->getVal() != val){
         temp = temp->getNext();
@@ -84,7 +84,7 @@ Node * LinkedList::nextExecutioner(int val) {
     return temp->getNext()->getNext();
 }
 
-Node* LinkedList::findNode(int val) {
+Node* LinkedList::findNode(int val) { //Finds a node using it's value and returns it
     Node* temp = sentinel;
     while(temp->getVal() != val){
         temp = temp->getNext();
@@ -92,7 +92,7 @@ Node* LinkedList::findNode(int val) {
     return temp;
 }
 
-int LinkedList::size() {
+int LinkedList::size() { //Gets the list size
     int size = 0;
     Node* temp = sentinel->getNext();
     while(temp != sentinel){
@@ -103,19 +103,19 @@ int LinkedList::size() {
 }
 
 
-int LinkedList::beginExecution() {
-    Node* currentExecutioner = this->findNode(1);
-    while(this->size() > 1){
-        if(currentExecutioner->getNext()->getVal() == 0){
-            this->remove(currentExecutioner->getNext()->getNext());
-            currentExecutioner=currentExecutioner->getNext()->getNext();
-        } else {
-            this->remove(currentExecutioner->getNext());
-            currentExecutioner = currentExecutioner->getNext();
+int LinkedList::beginExecution() { //This is the main part of the program.
+    Node *currentExecutioner = this->findNode(1); //currentExecutioner is, as the variable says, the executionere, in the beginning it's going to be the first node.
+    while (this->size() > 1) { //This will run until the list is of size 1.
+        if (currentExecutioner->getNext()->getVal() == 0) { //This will check if the next node to be executed is the sentinel.
+            this->remove(currentExecutioner->getNext()->getNext()); //Instead of removing the sentinel, it removes the first node after it
+            currentExecutioner = currentExecutioner->getNext()->getNext(); //This sets the executioner to the node after the one which was just removed, skipping the sentinel.
+        } else { //Normal case, if it's not the sentinel getting killed.
+            this->remove(currentExecutioner->getNext()); //Removes the node after it.
+            currentExecutioner = currentExecutioner->getNext(); //And changes the executioner.
 
         }
-        if(currentExecutioner->getVal() == 0){
-            currentExecutioner=currentExecutioner->getNext();
+        if (currentExecutioner->getVal() == 0) {
+            currentExecutioner = currentExecutioner->getNext(); //Basically what this does is if the sentinel IS the executioner, it's going to skip it and make the executioner the next node
         }
 
     }

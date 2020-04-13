@@ -18,9 +18,10 @@ class LinkedList {
         void printList();
         void remove(int);
         void remove(Node*);
-        int size();
-        Node* nextExecutioner(int);
         Node* findNode(int);
+        int size();
+
+        Node* nextExecutioner(int);
         int beginExecution();
 
 };

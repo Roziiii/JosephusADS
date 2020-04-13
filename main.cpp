@@ -13,9 +13,10 @@ LinkedList generate_list(int size){
 
 
 int main() {
-    LinkedList josephusCircle = generate_list(100000);
-    josephusCircle.printList();
-    josephusCircle.beginExecution();
-    josephusCircle.printList();
+    int numberOfPeople;
+    cin>>numberOfPeople;
+    LinkedList josephusCircle = generate_list(numberOfPeople); //Just a simple function that appends as many nodes as numberOfPeople, giving them values from 1 to numberOfPeople
+    josephusCircle.beginExecution(); //Begins the execution simulation
+    josephusCircle.printList(); //Prints the list, which should now be only 1 element, the position of the survivor.
 
 }
