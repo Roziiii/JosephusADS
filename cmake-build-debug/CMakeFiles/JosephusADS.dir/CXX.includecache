@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.h
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.cpp
+iostream
+-
+linkedlist.h
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.h
+
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.h
 node.h
-/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node.h
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.h
+
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.h
 
 /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/main.cpp
 iostream
 -
-linkedlist.h
-/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.h
-
-/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node.h
+include/linkedlist.h
+/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.h
 

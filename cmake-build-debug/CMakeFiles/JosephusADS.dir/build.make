@@ -70,32 +70,47 @@ CMakeFiles/JosephusADS.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JosephusADS.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/main.cpp -o CMakeFiles/JosephusADS.dir/main.cpp.s
 
-CMakeFiles/JosephusADS.dir/linkedlist.cpp.o: CMakeFiles/JosephusADS.dir/flags.make
-CMakeFiles/JosephusADS.dir/linkedlist.cpp.o: ../linkedlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/JosephusADS.dir/linkedlist.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JosephusADS.dir/linkedlist.cpp.o -c /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.cpp
+CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o: CMakeFiles/JosephusADS.dir/flags.make
+CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o: ../include/linkedlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o -c /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.cpp
 
-CMakeFiles/JosephusADS.dir/linkedlist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JosephusADS.dir/linkedlist.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.cpp > CMakeFiles/JosephusADS.dir/linkedlist.cpp.i
+CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.cpp > CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.i
 
-CMakeFiles/JosephusADS.dir/linkedlist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JosephusADS.dir/linkedlist.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/linkedlist.cpp -o CMakeFiles/JosephusADS.dir/linkedlist.cpp.s
+CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/linkedlist.cpp -o CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.s
+
+CMakeFiles/JosephusADS.dir/include/node.cpp.o: CMakeFiles/JosephusADS.dir/flags.make
+CMakeFiles/JosephusADS.dir/include/node.cpp.o: ../include/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/JosephusADS.dir/include/node.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JosephusADS.dir/include/node.cpp.o -c /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.cpp
+
+CMakeFiles/JosephusADS.dir/include/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JosephusADS.dir/include/node.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.cpp > CMakeFiles/JosephusADS.dir/include/node.cpp.i
+
+CMakeFiles/JosephusADS.dir/include/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JosephusADS.dir/include/node.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/include/node.cpp -o CMakeFiles/JosephusADS.dir/include/node.cpp.s
 
 # Object files for target JosephusADS
 JosephusADS_OBJECTS = \
 "CMakeFiles/JosephusADS.dir/main.cpp.o" \
-"CMakeFiles/JosephusADS.dir/linkedlist.cpp.o"
+"CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o" \
+"CMakeFiles/JosephusADS.dir/include/node.cpp.o"
 
 # External object files for target JosephusADS
 JosephusADS_EXTERNAL_OBJECTS =
 
 JosephusADS: CMakeFiles/JosephusADS.dir/main.cpp.o
-JosephusADS: CMakeFiles/JosephusADS.dir/linkedlist.cpp.o
+JosephusADS: CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o
+JosephusADS: CMakeFiles/JosephusADS.dir/include/node.cpp.o
 JosephusADS: CMakeFiles/JosephusADS.dir/build.make
 JosephusADS: CMakeFiles/JosephusADS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable JosephusADS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable JosephusADS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/JosephusADS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

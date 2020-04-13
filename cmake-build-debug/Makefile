@@ -123,32 +123,59 @@ JosephusADS/fast:
 	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/build
 .PHONY : JosephusADS/fast
 
-linkedlist.o: linkedlist.cpp.o
+include/linkedlist.o: include/linkedlist.cpp.o
 
-.PHONY : linkedlist.o
+.PHONY : include/linkedlist.o
 
 # target to build an object file
-linkedlist.cpp.o:
-	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/linkedlist.cpp.o
-.PHONY : linkedlist.cpp.o
+include/linkedlist.cpp.o:
+	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.o
+.PHONY : include/linkedlist.cpp.o
 
-linkedlist.i: linkedlist.cpp.i
+include/linkedlist.i: include/linkedlist.cpp.i
 
-.PHONY : linkedlist.i
+.PHONY : include/linkedlist.i
 
 # target to preprocess a source file
-linkedlist.cpp.i:
-	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/linkedlist.cpp.i
-.PHONY : linkedlist.cpp.i
+include/linkedlist.cpp.i:
+	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.i
+.PHONY : include/linkedlist.cpp.i
 
-linkedlist.s: linkedlist.cpp.s
+include/linkedlist.s: include/linkedlist.cpp.s
 
-.PHONY : linkedlist.s
+.PHONY : include/linkedlist.s
 
 # target to generate assembly for a file
-linkedlist.cpp.s:
-	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/linkedlist.cpp.s
-.PHONY : linkedlist.cpp.s
+include/linkedlist.cpp.s:
+	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/include/linkedlist.cpp.s
+.PHONY : include/linkedlist.cpp.s
+
+include/node.o: include/node.cpp.o
+
+.PHONY : include/node.o
+
+# target to build an object file
+include/node.cpp.o:
+	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/include/node.cpp.o
+.PHONY : include/node.cpp.o
+
+include/node.i: include/node.cpp.i
+
+.PHONY : include/node.i
+
+# target to preprocess a source file
+include/node.cpp.i:
+	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/include/node.cpp.i
+.PHONY : include/node.cpp.i
+
+include/node.s: include/node.cpp.s
+
+.PHONY : include/node.s
+
+# target to generate assembly for a file
+include/node.cpp.s:
+	$(MAKE) -f CMakeFiles/JosephusADS.dir/build.make CMakeFiles/JosephusADS.dir/include/node.cpp.s
+.PHONY : include/node.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... JosephusADS"
-	@echo "... linkedlist.o"
-	@echo "... linkedlist.i"
-	@echo "... linkedlist.s"
+	@echo "... include/linkedlist.o"
+	@echo "... include/linkedlist.i"
+	@echo "... include/linkedlist.s"
+	@echo "... include/node.o"
+	@echo "... include/node.i"
+	@echo "... include/node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

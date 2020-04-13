@@ -1,12 +1,22 @@
 #include <iostream>
-#include "linkedlist.h"
+#include "include/linkedlist.h"
 
+using namespace std;
+
+LinkedList generate_list(int size){
+    LinkedList josephusCircle;
+    for(int i=1;i<=size;i++){
+        josephusCircle.append(i);
+    }
+    return josephusCircle;
+}
 
 
 int main() {
-    LinkedList josephusCircle;
-    josephusCircle.append(1);
-    josephusCircle.append(2);
-    josephusCircle.prepend(0);
-    josephusCircle.print_list();
+    int numberOfPeople;
+    cin>>numberOfPeople;
+    LinkedList josephusCircle = generate_list(numberOfPeople); //Just a simple function that appends as many nodes as numberOfPeople, giving them values from 1 to numberOfPeople
+    josephusCircle.beginExecution(); //Begins the execution simulation
+    josephusCircle.printList(); //Prints the list, which should now be only 1 element, the position of the survivor.
+
 }
