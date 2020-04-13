@@ -27,7 +27,7 @@ void LinkedList::append(int val) {
     }
 }
 
-void LinkedList::printList() {
+void LinkedList::printList() const {
     if(sentinel->getNext() == nullptr){ //Checks if the list is empty.
         std::cout<<"List is empty!";
     } else {
@@ -84,7 +84,7 @@ Node * LinkedList::nextExecutioner(int val) { //Lists the 3rd element from a giv
     return temp->getNext()->getNext();
 }
 
-Node* LinkedList::findNode(int val) { //Finds a node using it's value and returns it
+Node* LinkedList::findNode(int val) const { //Finds a node using it's value and returns it
     Node* temp = sentinel;
     while(temp->getVal() != val){
         temp = temp->getNext();
@@ -92,7 +92,7 @@ Node* LinkedList::findNode(int val) { //Finds a node using it's value and return
     return temp;
 }
 
-int LinkedList::size() { //Gets the list size
+int LinkedList::size() const { //Gets the list size
     int size = 0;
     Node* temp = sentinel->getNext();
     while(temp != sentinel){

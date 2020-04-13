@@ -13,11 +13,11 @@ class Node {
         Node* next;
     public:
         void setVal(int);
-        int getVal();
+        int getVal() const;
         void setNext(Node*);
-        Node* getNext();
+        Node* getNext() const;
         void setPrev(Node*);
-        Node* getPrev();
+        Node* getPrev() const;
 
 };
 
