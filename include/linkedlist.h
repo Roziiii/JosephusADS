@@ -22,7 +22,7 @@ class LinkedList {
         int size();
 
         Node* nextExecutioner(int);
-        int beginExecution();
+        int beginExecution(int);
 
 };
 

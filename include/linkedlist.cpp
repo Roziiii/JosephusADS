@@ -103,8 +103,8 @@ int LinkedList::size() { //Gets the list size
 }
 
 
-int LinkedList::beginExecution() { //This is the main part of the program.
-    Node *currentExecutioner = this->findNode(1); //currentExecutioner is, as the variable says, the executionere, in the beginning it's going to be the first node.
+int LinkedList::beginExecution(int startingPoint) { //This is the main part of the program.
+    Node *currentExecutioner = this->findNode(startingPoint); //currentExecutioner is, as the variable says, the executioner, in the beginning from the starting point node.
     while (this->size() > 1) { //This will run until the list is of size 1.
         if (currentExecutioner->getNext()->getVal() == 0) { //This will check if the next node to be executed is the sentinel.
             this->remove(currentExecutioner->getNext()->getNext()); //Instead of removing the sentinel, it removes the first node after it

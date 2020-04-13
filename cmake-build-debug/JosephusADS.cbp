@@ -93,9 +93,6 @@
 		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/main.cpp">
 			<Option target="JosephusADS"/>
 		</Unit>
-		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/node_old.h">
-			<Option target="JosephusADS"/>
-		</Unit>
 		<Unit filename="/Users/poprosian/Desktop/University/Programming/C++/ADS/JosephusADS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
